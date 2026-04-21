@@ -19,8 +19,12 @@
     if (target < 0 || target >= total || target === current) return;
     animating = true;
 
+    // Reset overlay to rest state with no transition (prevents snap-back flash)
+    overlay.style.transition = 'none';
     overlay.classList.remove('reverse', 'wipe-in', 'wipe-out');
     if (direction < 0) overlay.classList.add('reverse');
+    void overlay.offsetWidth; // force reflow so new rest position takes effect
+    overlay.style.transition = '';
 
     // Start wipe
     requestAnimationFrame(() => {
@@ -44,7 +48,7 @@
     }, 340);
 
     setTimeout(() => {
-      overlay.classList.remove('wipe-out', 'reverse');
+      // Leave overlay off-screen; next call resets transition+rest before animating.
       animating = false;
     }, 700);
   }
