@@ -6,7 +6,7 @@
 <title>AI in Virtual Production — Christopher Jorna</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;700&family=Caveat:wght@500;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -16,10 +16,15 @@
   <!-- ════════ 1. TITLE ════════ -->
   <section class="slide" data-slide="1">
     <div class="slide-inner intro-slide">
+      <div class="tape tape-tl"></div>
+      <div class="tape tape-br"></div>
       <h1 class="display">AI in<br>Virtual<br>Production.</h1>
       <div class="byline">
         <p class="name">Christopher Jorna</p>
       </div>
+      <svg class="hand-squiggle hand-squiggle-1" viewBox="0 0 400 100" preserveAspectRatio="none">
+        <path d="M10,60 C60,10 140,90 220,40 C300,-5 360,70 390,50" fill="none" stroke="#D94038" stroke-width="4" stroke-linecap="round"/>
+      </svg>
     </div>
   </section>
 
@@ -31,31 +36,72 @@
       <ul class="big-list">
         <li>Great.</li>
         <li>Not authentic.</li>
-        <li>Humans feel off.</li>
+        <li>Humans feel <span class="marker-circle">off</span>.</li>
       </ul>
-      <p class="verdict-text" style="margin-top: 40px;">Good for <em>backdrops</em>.</p>
+      <p class="verdict-text" style="margin-top: 40px;">Good for <em class="marker-under">backdrops</em>.</p>
     </div>
   </section>
 
-  <!-- ════════ 3. HYBRID ════════ -->
+  <!-- ════════ 3. THREE FLAVORS ════════ -->
   <section class="slide" data-slide="3">
     <div class="slide-inner wide">
       <p class="eyebrow">Visual AI</p>
+      <h2>Three flavors.</h2>
+      <div class="flavor-grid">
+        <a class="flavor-card" href="https://www.youtube.com/watch?v=HK6y8DAPN_0" target="_blank" rel="noopener">
+          <div class="flavor-num">01</div>
+          <div class="flavor-thumb">
+            <img src="https://img.youtube.com/vi/HK6y8DAPN_0/hqdefault.jpg" alt="Sora demo">
+            <span class="play-btn">&#9658;</span>
+          </div>
+          <p class="flavor-title">Fully gen</p>
+          <p class="flavor-sub">prompt &rarr; video<br><span class="flavor-ex">e.g. Sora</span></p>
+        </a>
+        <a class="flavor-card" href="https://www.youtube.com/watch?v=OCQUtyPSJy0" target="_blank" rel="noopener">
+          <div class="flavor-num">02</div>
+          <div class="flavor-thumb">
+            <img src="https://img.youtube.com/vi/OCQUtyPSJy0/hqdefault.jpg" alt="Kling start-end frame">
+            <span class="play-btn">&#9658;</span>
+          </div>
+          <p class="flavor-title">Start &rarr; end frame</p>
+          <p class="flavor-sub">2 frames, AI fills between<br><span class="flavor-ex">e.g. Kling</span></p>
+        </a>
+        <a class="flavor-card" href="https://www.youtube.com/watch?v=z3F0ei62Kmk" target="_blank" rel="noopener">
+          <div class="flavor-num">03</div>
+          <div class="flavor-thumb">
+            <img src="https://img.youtube.com/vi/z3F0ei62Kmk/hqdefault.jpg" alt="Runway Act-One motion transfer">
+            <span class="play-btn">&#9658;</span>
+          </div>
+          <p class="flavor-title">Motion transfer</p>
+          <p class="flavor-sub">your performance &rarr; their body<br><span class="flavor-ex">e.g. Runway Act-One</span></p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ 4. HYBRID ════════ -->
+  <section class="slide" data-slide="4">
+    <div class="slide-inner wide">
+      <p class="eyebrow">Visual AI</p>
       <h2>Hybrid.</h2>
-      <p class="lede">Real people on set. AI backgrounds.<br>Best of both worlds.</p>
-      <div class="video-wrap" style="max-width: 900px;">
+      <p class="lede">Real people on set. AI backgrounds. <span class="marker-under">Best of both worlds.</span></p>
+      <div class="video-wrap tape-frame" style="max-width: 900px;">
+        <div class="tape tape-tl"></div>
+        <div class="tape tape-tr"></div>
         <video src="assets/video/fmp-before-after.mp4" autoplay loop muted playsinline></video>
       </div>
     </div>
   </section>
 
-  <!-- ════════ 4. IN THE PIPELINE — RIYADH ════════ -->
-  <section class="slide" data-slide="4">
+  <!-- ════════ 5. IN THE PIPELINE — RIYADH ════════ -->
+  <section class="slide" data-slide="5">
     <div class="slide-inner wide">
       <p class="eyebrow">Visual AI</p>
-      <h2>AI in the pipeline.</h2>
-      <p class="lede">Little tricks. Unreal stays the render engine.<br>Example: images &rarr; 3D assets.</p>
-      <div class="riyadh-image-wrap">
+      <h2>AI <em>in</em> the pipeline.</h2>
+      <p class="lede">Little tricks. Unreal stays the render engine.<br>Example: <span class="marker-under">images &rarr; 3D assets</span>.</p>
+      <div class="riyadh-image-wrap tape-frame">
+        <div class="tape tape-tl"></div>
+        <div class="tape tape-tr"></div>
         <img src="assets/img/riyadh-workflow.jpeg" alt="Riyadh building workflow" onerror="this.parentElement.classList.add('missing')">
         <div class="riyadh-placeholder">
           <p>[ drop riyadh-workflow.jpeg into assets/img/ ]</p>
@@ -64,13 +110,15 @@
     </div>
   </section>
 
-  <!-- ════════ 5. AFTER PIPELINE — HIGHVIS ════════ -->
-  <section class="slide" data-slide="5">
+  <!-- ════════ 6. AFTER PIPELINE — HIGHVIS ════════ -->
+  <section class="slide" data-slide="6">
     <div class="slide-inner wide">
       <p class="eyebrow">Visual AI</p>
-      <h2>AI after the pipeline.</h2>
+      <h2>AI <em>after</em> the pipeline.</h2>
       <p class="lede">Add texture. Make it more real.</p>
-      <div class="wipe-compare" data-label-left="Unreal" data-label-right="After AI">
+      <div class="wipe-compare tape-frame" data-label-left="Unreal" data-label-right="After AI">
+        <div class="tape tape-tl"></div>
+        <div class="tape tape-tr"></div>
         <img class="wipe-before" src="assets/img/cityscape-before.png" alt="Unreal untextured cityscape">
         <img class="wipe-after" src="assets/img/cityscape-still.png" alt="AI processed cityscape">
         <div class="wipe-divider">
@@ -81,43 +129,65 @@
     </div>
   </section>
 
-  <!-- ════════ 6. CODE AI ════════ -->
-  <section class="slide" data-slide="6">
+  <!-- ════════ 7. BEHIND THE CODE ════════ -->
+  <section class="slide" data-slide="7">
     <div class="slide-inner">
-      <p class="eyebrow">Code AI</p>
+      <p class="eyebrow">Behind the Code</p>
       <h2>Claude Code.</h2>
       <ul class="big-list">
         <li>Build your own software.</li>
         <li>Build your own infrastructure.</li>
         <li>Optimize things.</li>
       </ul>
-      <p class="small-note">+ open source &mdash; Corridor Key</p>
     </div>
   </section>
 
-  <!-- ════════ 7. FLOW STATE ════════ -->
-  <section class="slide" data-slide="7">
-    <div class="slide-inner">
-      <h1 class="display flow-display">Flow<br>state.</h1>
-    </div>
-  </section>
-
-  <!-- ════════ 8. CLOSE ════════ -->
+  <!-- ════════ 8. CORRIDOR KEY ════════ -->
   <section class="slide" data-slide="8">
     <div class="slide-inner">
-      <h2 style="font-size: clamp(36px, 6vw, 80px);">Questions?</h2>
+      <p class="eyebrow">Behind the Code</p>
+      <h2>Corridor Key.<br><span class="subline">+ open source.</span></h2>
+      <p class="caption-handbuilt handwritten">worth a look.</p>
+    </div>
+  </section>
+
+  <!-- ════════ 9. FLOW STATE ════════ -->
+  <section class="slide" data-slide="9">
+    <div class="slide-inner">
+      <h1 class="display flow-display">Flow<br>state.</h1>
+      <svg class="hand-squiggle hand-squiggle-2" viewBox="0 0 500 80">
+        <path d="M10,40 C100,5 200,75 300,35 C380,5 460,55 490,40" fill="none" stroke="#D94038" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ════════ 10. WHAT FUTURE? ════════ -->
+  <section class="slide" data-slide="10">
+    <div class="slide-inner">
+      <h1 class="display question-display">
+        What is<br>the future<br>film industry<br>you <span class="marker-under">want?</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- ════════ 11. CLOSE ════════ -->
+  <section class="slide" data-slide="11">
+    <div class="slide-inner">
+      <h2 style="font-size: clamp(42px, 7vw, 96px);">Questions?</h2>
       <div class="contact-row">
         <p class="contact-name">Christopher Jorna</p>
       </div>
     </div>
   </section>
 
-  <!-- ════════ 9. OPTIONAL FMP CLIP ════════ -->
-  <section class="slide" data-slide="9">
+  <!-- ════════ 12. OPTIONAL CLIP ════════ -->
+  <section class="slide" data-slide="12">
     <div class="slide-inner wide">
       <p class="eyebrow">[optional &mdash; if time]</p>
       <h2>Find My Phone.</h2>
-      <div class="video-wrap optional-clip">
+      <div class="video-wrap optional-clip tape-frame">
+        <div class="tape tape-tl"></div>
+        <div class="tape tape-tr"></div>
         <video src="assets/video/fmp-clip.mp4" controls playsinline></video>
       </div>
     </div>
@@ -125,10 +195,9 @@
 
 </main>
 
-<!-- ── Chrome ── -->
 <nav class="deck-chrome">
   <button id="prev" aria-label="Previous slide">&larr;</button>
-  <span id="indicator">1 / 9</span>
+  <span id="indicator">1 / 12</span>
   <button id="next" aria-label="Next slide">&rarr;</button>
 </nav>
 

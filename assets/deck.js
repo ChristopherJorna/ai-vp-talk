@@ -1,6 +1,7 @@
 (() => {
   const slides = Array.from(document.querySelectorAll('.slide'));
   const total = slides.length;
+  document.getElementById('indicator').textContent = `1 / ${total}`;
   const prevBtn = document.getElementById('prev');
   const nextBtn = document.getElementById('next');
   const indicator = document.getElementById('indicator');
