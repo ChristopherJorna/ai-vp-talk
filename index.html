@@ -13,23 +13,27 @@
 
 <main id="deck">
 
-  <!-- ════════ 1. TITLE ════════ -->
+  <!-- ════════ 1. TITLE (minimal) ════════ -->
   <section class="slide" data-slide="1">
     <div class="slide-inner intro-slide">
-      <div class="tape tape-tl"></div>
-      <div class="tape tape-br"></div>
       <h1 class="display">AI in<br>Virtual<br><span class="hi">Production.</span></h1>
       <div class="byline">
         <p class="name">Christopher Jorna</p>
       </div>
-      <svg class="hand-squiggle hand-squiggle-1" viewBox="0 0 400 100" preserveAspectRatio="none">
-        <path d="M10,60 C60,10 140,90 220,40 C300,-5 360,70 390,50" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round"/>
-      </svg>
     </div>
   </section>
 
-  <!-- ════════ 2. WAYS TO USE GEN AI ════════ -->
+  <!-- ════════ 2. INTRO — HI I'M CHRISTOPHER ════════ -->
   <section class="slide" data-slide="2">
+    <div class="slide-inner" style="text-align:center;">
+      <h1 class="display intro-display">Hi, I'm<br><span class="hi">Christopher</span>.</h1>
+      <p class="lede intro-lede">Virtual production operator, director, VFX workflow nerd. Based in Madrid, working in the UK.</p>
+      <a class="intro-email" href="mailto:christopher.jorna@gmail.com">christopher.jorna@gmail.com</a>
+    </div>
+  </section>
+
+  <!-- ════════ 3. WAYS TO USE GEN AI ════════ -->
+  <section class="slide" data-slide="3">
     <div class="slide-inner wide" style="text-align:center;">
       <span class="black-tag">Visual AI</span>
       <h2 style="text-align:center;">Some ways to use <span class="hi">gen AI</span>.</h2>
@@ -41,7 +45,8 @@
             <span class="play-btn">&#9658;</span>
           </div>
           <p class="flavor-title">Fully gen AI</p>
-          <p class="flavor-sub">prompt &rarr; video<span class="flavor-ex">e.g. Sora, Veo</span></p>
+          <p class="flavor-sub">prompt &rarr; video<span class="flavor-ex">e.g. Sora, Veo</span>
+            <span class="flavor-source">source: OpenAI</span></p>
         </a>
 
         <a class="flavor-card" href="https://www.linkedin.com/feed/update/urn:li:activity:7429921592895385600/" target="_blank" rel="noopener">
@@ -52,25 +57,24 @@
           </div>
           <p class="flavor-title">Start &rarr; end frame</p>
           <p class="flavor-sub">2 frames, AI fills between<span class="flavor-ex">e.g. Kling, Runway</span>
-            <span class="flavor-source">source: LinkedIn</span></p>
+            <span class="flavor-source">source: LinkedIn demo</span></p>
         </a>
 
-        <a class="flavor-card" href="https://youtube.com/shorts/8-WUEOZiGHc" target="_blank" rel="noopener">
+        <a class="flavor-card" href="https://www.youtube.com/watch?v=z3F0ei62Kmk" target="_blank" rel="noopener">
           <div class="flavor-num">03</div>
           <div class="flavor-thumb">
-            <img src="https://img.youtube.com/vi/8-WUEOZiGHc/hqdefault.jpg" alt="Modify existing video with AI">
-            <span class="play-btn">&#9658;</span>
+            <img src="https://img.youtube.com/vi/z3F0ei62Kmk/hqdefault.jpg" alt="Runway Act-One modify existing video">
           </div>
           <p class="flavor-title">Modify video</p>
           <p class="flavor-sub">feed video, restyle / re-light<span class="flavor-ex">e.g. Runway, Luma</span>
-            <span class="flavor-source">source: YouTube</span></p>
+            <span class="flavor-source">source: Runway</span></p>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ════════ 3. GEN AI VERDICT (minimal — talk to it) ════════ -->
-  <section class="slide" data-slide="3">
+  <!-- ════════ 4. GEN AI VERDICT ════════ -->
+  <section class="slide" data-slide="4">
     <div class="slide-inner tight" style="text-align:center;">
       <span class="black-tag">Visual AI</span>
       <h2 style="text-align:center;">Gen AI.</h2>
@@ -83,20 +87,24 @@
     </div>
   </section>
 
-  <!-- ════════ 4. HYBRID (square video, no wrapper) ════════ -->
-  <section class="slide" data-slide="4">
-    <div class="slide-inner">
-      <span class="black-tag">Visual AI</span>
-      <h2>Hybrid.</h2>
-      <p class="lede">Real people on set. AI backgrounds. <span class="hi">Best of both worlds.</span></p>
-      <div class="video-wrap square">
-        <video src="assets/video/fmp-before-after.mp4" autoplay loop muted playsinline></video>
+  <!-- ════════ 5. VP BRIDGE ════════ -->
+  <section class="slide" data-slide="5">
+    <div class="slide-inner" style="text-align:center;">
+      <span class="black-tag">Virtual Production</span>
+      <h2 style="text-align:center;">That's where <span class="hi">VP</span> comes in.</h2>
+      <p class="lede" style="margin-left:auto;margin-right:auto;">Keep the human performance. Replace the backgrounds.</p>
+      <div class="vp-reference">
+        <img src="assets/img/vp-stage.jpg" alt="Virtual production LED stage" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div class="vp-placeholder" style="display:none;">
+          <p>drop <code>vp-stage.jpg</code> into <code>assets/img/</code></p>
+        </div>
       </div>
+      <p class="link-line">image: ILM StageCraft — The Mandalorian</p>
     </div>
   </section>
 
-  <!-- ════════ 5. IN THE PIPELINE — RIYADH (top/bot split 16:9) ════════ -->
-  <section class="slide" data-slide="5">
+  <!-- ════════ 6. IN THE PIPELINE — RIYADH ════════ -->
+  <section class="slide" data-slide="6">
     <div class="slide-inner wide">
       <span class="black-tag">Visual AI</span>
       <h2>AI <em>in</em> the pipeline.</h2>
@@ -108,8 +116,20 @@
     </div>
   </section>
 
-  <!-- ════════ 6. AFTER PIPELINE — SPACESHIP ════════ -->
-  <section class="slide" data-slide="6">
+  <!-- ════════ 7. WHITE WALL TECHNIQUE (formerly Hybrid) ════════ -->
+  <section class="slide" data-slide="7">
+    <div class="slide-inner">
+      <span class="black-tag">Visual AI</span>
+      <h2>White wall technique.</h2>
+      <p class="lede">Real people on set. AI backgrounds. <span class="hi">Best of both worlds.</span></p>
+      <div class="video-wrap square">
+        <video src="assets/video/fmp-before-after.mp4" autoplay loop muted playsinline></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ 8. AFTER PIPELINE — SPACESHIP ════════ -->
+  <section class="slide" data-slide="8">
     <div class="slide-inner wide">
       <span class="black-tag">Visual AI</span>
       <h2>AI <em>after</em> the pipeline.</h2>
@@ -125,16 +145,16 @@
     </div>
   </section>
 
-  <!-- ════════ 7. VIBE CODING ════════ -->
-  <section class="slide" data-slide="7">
+  <!-- ════════ 9. VIBE CODING ════════ -->
+  <section class="slide" data-slide="9">
     <div class="slide-inner" style="text-align:center;">
       <span class="black-tag">Behind the Code</span>
       <h1 class="display" style="font-size: clamp(60px, 10vw, 150px); margin-top: 10px;"><span class="hi">Vibe coding</span>.</h1>
     </div>
   </section>
 
-  <!-- ════════ 8. CORRIDOR KEY ════════ -->
-  <section class="slide" data-slide="8">
+  <!-- ════════ 10. CORRIDOR KEY ════════ -->
+  <section class="slide" data-slide="10">
     <div class="slide-inner" style="text-align:center;">
       <span class="black-tag">Behind the Code</span>
       <h2 style="text-align:center;">Corridor Key.<br><span class="subline">+ open source.</span></h2>
@@ -149,8 +169,8 @@
     </div>
   </section>
 
-  <!-- ════════ 9. ENABLING FLOW STATE ════════ -->
-  <section class="slide" data-slide="9">
+  <!-- ════════ 11. ENABLING FLOW STATE ════════ -->
+  <section class="slide" data-slide="11">
     <div class="slide-inner">
       <h1 class="display flow-display">Enabling<br>flow state.</h1>
       <svg class="hand-squiggle hand-squiggle-2" viewBox="0 0 500 80">
@@ -159,8 +179,8 @@
     </div>
   </section>
 
-  <!-- ════════ 10. WHAT FUTURE? ════════ -->
-  <section class="slide" data-slide="10">
+  <!-- ════════ 12. WHAT FUTURE? ════════ -->
+  <section class="slide" data-slide="12">
     <div class="slide-inner" style="text-align:center;">
       <h1 class="display question-display">
         What is<br>the future<br>film industry<br>you <span class="hi">want?</span>
@@ -168,18 +188,19 @@
     </div>
   </section>
 
-  <!-- ════════ 11. CLOSE ════════ -->
-  <section class="slide" data-slide="11">
+  <!-- ════════ 13. CLOSE ════════ -->
+  <section class="slide" data-slide="13">
     <div class="slide-inner" style="text-align:center;">
       <h2 style="font-size: clamp(36px, 5.8vw, 78px); text-align:center;">Questions?</h2>
       <div class="contact-row">
         <p class="contact-name">Christopher Jorna</p>
+        <a class="intro-email" href="mailto:christopher.jorna@gmail.com" style="margin-top:6px;">christopher.jorna@gmail.com</a>
       </div>
     </div>
   </section>
 
-  <!-- ════════ 12. FIND MY PHONE CLIP (no wrapper) ════════ -->
-  <section class="slide" data-slide="12">
+  <!-- ════════ 14. FIND MY PHONE CLIP ════════ -->
+  <section class="slide" data-slide="14">
     <div class="slide-inner" style="text-align:center;">
       <h2 style="text-align:center;">Find My Phone.</h2>
       <video class="naked-clip" src="assets/video/fmp-clip.mp4" controls playsinline></video>
@@ -190,7 +211,7 @@
 
 <nav class="deck-chrome">
   <button id="prev" aria-label="Previous slide">&larr;</button>
-  <span id="indicator">1 / 12</span>
+  <span id="indicator">1 / 14</span>
   <button id="next" aria-label="Next slide">&rarr;</button>
 </nav>
 
