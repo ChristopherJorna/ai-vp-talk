@@ -38,10 +38,11 @@
       slides[current].classList.add('active');
       updateIndicator();
 
-      // Handle autoplay videos
+      // Handle autoplay videos — play ALL autoplay videos on the active slide
       document.querySelectorAll('video[autoplay]').forEach(v => v.pause());
-      const activeVideo = slides[current].querySelector('video[autoplay]');
-      if (activeVideo) activeVideo.play().catch(() => {});
+      slides[current].querySelectorAll('video[autoplay]').forEach(v => {
+        v.play().catch(() => {});
+      });
 
       overlay.classList.remove('wipe-in');
       overlay.classList.add('wipe-out');
@@ -59,8 +60,9 @@
   // Initial state
   slides[0].classList.add('active');
   updateIndicator();
-  const firstVideo = slides[0].querySelector('video[autoplay]');
-  if (firstVideo) firstVideo.play().catch(() => {});
+  slides[0].querySelectorAll('video[autoplay]').forEach(v => {
+    v.play().catch(() => {});
+  });
 
   // Buttons
   prevBtn.addEventListener('click', prev);
